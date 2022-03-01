@@ -1,0 +1,382 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+   
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #0F80A2;
+}
+
+button:hover{
+    background-color: #176f8a;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.azul {
+    color:#68bad3;
+}
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: #0F80A2;
+  font-size: 1.6em;
+}
+
+header .logo a{
+    color:#0F80A2;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #0F80A2;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient( 0deg, 
+     rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/plansocial-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center center;
+}
+
+#hero h1{
+    color: #fff;
+    font-size: 6em;
+}
+
+#sociales{
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+#sociales .container{
+    text-align: center;
+     padding: 200px 12px;
+}
+
+
+#nuestros-planes {
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    color: #fff;
+    text-align: center;
+}
+
+#nuestros-planes .container{
+    padding: 150px 12px;
+}
+
+#nuestros-planes h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-planes p{
+    display: none;
+}
+  
+
+#nuestros-planes .carta{
+       background-position: center center;
+       background-size: cover;
+       padding: 50px;
+       margin: 20px;
+       border-radius: 15px;
+}
+
+ .carta:first-child{
+    background-image: linear-gradient( 0deg, 
+     rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/plan-1.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient( 0deg, 
+     rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/plan-2.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient( 0deg, 
+     rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/grupofamiliar.jpg");
+}
+
+#caracteristicas {
+    background-image: linear-gradient( 0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5))
+    ,url("imagenes/ambulancia.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 12px;
+}
+
+#caracteristicas ul li{
+   padding: 10px 20px;
+   color:#ffffff;
+   font-size: 20px;
+}
+
+#contacto{
+    flex-basis: 100px;
+    padding: 50px 12px;
+    background: rgb(49, 47, 47);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto form{
+    width: 450px;
+    background-color: rgba(0,0,0,0.4);
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#contacto h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#contacto input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    box-sizing: border-box;
+}
+
+#contacto textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.enviar-form{
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    background-color: #fff;
+    color: #3d9ebb;
+}
+
+footer{
+    background-color: rgb(27, 27, 27);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(223, 217, 217);
+}
+
+footer .container{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer .redes {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+footer .redes a{
+    padding: 15px;
+    color: rgb(223, 217, 217);
+    font-size: 1.5em;
+}
+
+@media (min-width: 1020px){
+     
+     header{
+         position: fixed;
+         width: 100%;
+     }
+
+    header .container{
+       flex-direction: row;
+       justify-content: space-between; 
+    }
+
+    header a{
+        font-size: 1em;
+    }
+
+    header nav{
+       flex-direction: row;
+       padding-bottom: 0;
+       padding-right: 20px;
+    }
+}
+
+#hero h1{
+    font-size: 5em;
+}
+
+#sociales .container{
+       display: flex;
+       justify-content: space-evenly;
+}
+
+#sociales .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sociales h2{
+    margin-top: 0px;
+}
+#sociales .img-container{
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ), url("imagenes/pexels-edward-jenner-4031818.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+    border-radius: 7px;
+    
+}
+
+#nuestros-planes .planes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#nuestros-planes p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#nuestros-planes h2{
+    font-size: 4em;
+}
+
+#nuestros-planes h3{
+    margin-top: 0;
+}
+#nuestros-planes .carta{
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+#contacto{
+    flex-basis: 100%;
+}
+#contacto form{
+    padding: 30px 12px;
+}
+
+@media (max-width: 280px){
+
+    #hero {
+        font-size: 12px;
+    }
+
+    #sociales .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sociales .img-container{
+
+        margin-top: -80px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    #sociales .texto{
+        margin-top: 25px;
+    }
+
+}
+
+
